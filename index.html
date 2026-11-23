@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do список | Менеджер задач</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Контейнер для вставки приложения -->
+    <div id="project-section"></div>
+
+    <!-- Задача 1 - блока 1
+    <div class="card"><h1>papa1</h1><h1>papa1-1</h1></div>
+    <div class="card"><h1>papa2</h1></div>
+    <div class="card"><h1>papa3</h1></div>
+    <div class="card"><h1>pap4</h1></div> -->
+
+
+    <!-- Задача 2 - блок 1
+    <div class="button" >
+        <button id="click-btn">Клик меня!</button>
+    </div> -->
+
+
+
+
+    <!-- Для Задачи 3
+    <ul id="dynamic-list">
+        <li>Первый пункт</li>
+        <li>Второй пункт</li>
+        <li>Третий пункт</li>
+    </ul> -->
+
+
+
+
+
+
+    <!-- Для Задачи 4
+    <div data-id="123">Элемент с data-id 123</div>
+    <div data-id="456">Элемент с data-id 456</div>
+    <div data-role="admin">Элемент с data-role admin</div> -->
+
+
+
+
+    <!-- Для Задачи 5
+    <div class="item">Элемент 1</div>
+    <div class="item">Элемент 2</div>
+
+ -->
+
+
+
+
+    <!-- Для Задачи 7
+    <section id="search-section">
+        <div class="card">Карточка в search-section 1</div>
+        <div class="card">Карточка в search-section 2</div>
+    </section>
+ -->
+
+
+
+
+    <!-- Для Задачи 8 -->
+    <!-- (карточки создадутся через JS) -->
+
+
+
+
+
+
+        
+        <!-- ЗАКРЕПЛЕНИЕ БЛОКА  2 Для Задачи 1 
+    <div class="item">Элемент 1</div>
+    <div class="item">Элемент 2</div>
+    <div class="item">Элемент 3</div>
+
+     Для Задачи 2 
+    <h1 id="main-title">Заголовок для теста</h1>
+
+     Для Задачи 3 
+    <section id="search-section">
+        <div class="card">Карточка 1</div>
+        <div class="card">Карточка 2</div>
+        <div class="card">Карточка 3</div>
+    </section>  -->
+
+
+
+        <!-- Для задачи 4
+    <div class="nav-menu">
+        <a href="#" class="nav-link">Главная</a>
+        <a href="#" class="nav-link">О нас</a>
+        <a href="#" class="nav-link active">Контакты</a>
+    </div>
+
+     Для задачи 5 
+    <div class="task-list">
+        <div class="task">Помыть посуду</div>
+        <div class="task">Сделать уроки</div>
+        <div class="task">Поиграть</div>
+    </div>
+
+     Для задачи 6 
+    <button id="btn-save">Сохранить</button> -->
+
+
+        <!-- Для Задачи 1 
+    <a href="#">Ссылка 1</a>
+    <a href="#">Ссылка 2</a>
+    <a href="#">Ссылка 3</a>
+
+     Для Задачи 2 
+    <h2 id="title">Старый заголовок</h2>
+
+     Для Задачи 3 
+    <div class="task">Сделать уборку</div>
+    <div class="task">Погулять</div>
+    <div class="task">Сделать уроки</div> -->
+
+
+
+
+    <!--Блок 3-->
+    <!--  Для задачи 1, 2, 5 
+    <section id="content-section">
+        <div class="flex-row">
+            Кнопка добавится через JS 
+        </div>
+    </section>
+
+     Элемент, с которым будем работать 
+    <div id="content-target">
+        <h3>Заголовок внутри</h3>
+        <p>Это <b>жирный</b> текст, а это <i>курсив</i>.</p>
+    </div>
+
+     Для задачи 4 
+    <ul id="dynamic-list">
+        <li>Существующий пункт 1</li>
+        <li>Существующий пункт 2</li>
+    </ul>
+
+     Для задачи 5 (источник) 
+    <div class="card">
+        <span style="color: red;">Красный текст</span>
+        <strong>Жирный текст</strong>
+    </div> -->
+
+
+
+
+    <!-- ЗАКРПЕЛЕНИЕ БЛОКА 3 Для задачи 1
+    <div id="box-1">Обычный текст</div>
+
+    <!-- Для задачи 2 
+    <div id="box-2"></div>
+
+    <!-- Для задачи 3 
+    <div id="box-3">
+        <span>Красный</span> и <b>жирный</b> текст.
+    </div>
+    <div id="box-4"></div> -->
+
+
+        <!-- Для задачи 1
+    <div id="box-1">Старый текст</div>
+
+    <!-- Для задачи 2
+    <div id="box-2"></div>
+
+    <!-- Для задачи 3
+    <div id="box-3">
+        <p>Первый параграф</p>
+        <p>Второй параграф</p>
+    </div>
+    <div id="box-4"></div> -->
+
+
+
+
+    <!-- <div class="mama"><h2>BMW E46 - то, о чем мечтаю многие, но купят не все...</h2><button class="buttonBmw">нажми меня...</button></div> -->
+
+    
+
+
+        <!-- Для задачи 1 
+    <div id="task-1">Я текст, который нужно изменить</div>
+    <button id="btn-change">Изменить</button>
+
+    <!-- Для задачи 2 
+    <ul id="my-list"></ul>
+
+    <!-- Для задачи 3 
+    <div id="task-3">Наведи на меня</div> 
+
+        <!-- Для задачи 1 
+    <div id="box">Привет</div>
+    <button id="change-btn">Изменить</button>
+
+    <!-- Для задачи 2 
+    <div id="task-2">Наведи на меня</div>
+
+    <!-- Для задачи 3 
+    <ul id="list"></ul> -->
+
+    
+
+
+        <!-- Для задачи 1 и 5
+    <div class="image-container">
+        <label for="image-url">Вставь ссылку на картинку:</label>
+        <input type="text" id="image-url" placeholder="https://..." value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbptI0OkXdm50Y07lKaz-yLOLA8kQoMEXP0cArlOD1Jw&s=10">
+        <button id="change-image-btn">Поменять картинку</button>
+        
+        <div>
+            <img id="demo-image" src="https://via.placeholder.com/150" width="150" alt="Demo Image">
+        </div>
+    </div>
+
+    <!-- Для задачи 3 
+    <div id="events-section">
+        <div class="flex-row">
+            <!-- Кнопка создастся через JS 
+        </div>
+        <button id="click-btn">Нажми на меня</button>
+    </div>
+
+    <!-- Для задачи 4 
+    <div data-info="Важная информация 1">Блок 1</div>
+    <div data-info="Секретные данные">Блок 2</div>
+    <div data-info="Еще что-то">Блок 3</div> -->
+
+
+
+
+
+
+        <!--ЗАКРЕПЛЕНИЕ БЛОКА 4 Для задачи 1 
+    <input type="text" id="user-name" placeholder="Введите имя">
+    <button id="save-btn">Сохранить</button>
+    <p id="output"></p>
+
+    <!-- Для задачи 2 
+    <div id="box-attr">Я блок</div>
+
+    <!-- Для задачи 3 
+    <button id="toggle-btn">Переключить</button>
+    <div id="toggle-box">Меня нужно переключить</div> -->
+
+
+
+
+
+        <!-- Задача 1
+    <input type="text" id="color-input" placeholder="Введите цвет (red, blue...)">
+    <button id="apply-btn">Применить</button>
+    <div id="color-box" style="width: 100px; height: 100px; border: 1px solid black;"></div>
+
+    <!-- Задача 2 
+    <div id="my-box" class="box">Я блок</div>
+    <button id="add-class-btn">Добавить класс</button>
+
+    <!-- Задача 3 
+    <img id="pic" src="https://via.placeholder.com/150" alt="pic">
+    <button id="change-pic-btn">Сменить картинку</button>
+
+    <!-- Задача 4 
+    <div id="target" data-name="Ilya" data-age="20">Информация</div>
+    <button id="show-data-btn">Показать данные</button>
+
+    <!-- Задача 5 
+    <button id="disable-me">Нажми меня</button>
+    <button id="toggle-btn">Выключить/Включить</button> -->
+
+
+        <!-- Задача 1
+    <div id="main-box" style="width: 100px; height: 100px; border: 2px solid black;"></div>
+    <button id="btn-1">Сделать красным</button>
+
+    <!-- Задача 2 
+    <ul id="tasks"></ul>
+
+    <!-- Задача 3 
+    <input type="text" id="user-input" placeholder="Введите текст">
+    <button id="copy-btn">Скопировать в список</button>
+
+    <!-- Задача 4 
+    <div id="magic-box">Наведи на меня</div>
+
+    <!-- Задача 5 
+    <button id="toggle-me">Нажми меня</button> -->
+
+
+        <!-- <!-- Задача 1 
+    <div id="alert-box" style="padding: 10px; border: 1px solid black;">Я обычный блок</div>
+    <button id="make-danger">Сделать опасным</button>
+
+    <!-- Задача 2 
+    <div id="text-changer">Старый текст</div>
+    <input type="text" id="new-text" placeholder="Новый текст">
+    <button id="change-text-btn">Изменить текст</button>
+
+    <!-- Задача 3 
+    <ul id="my-list"></ul>
+    <button id="add-item-btn">Добавить пункт</button>
+
+    <!-- Задача 4 
+    <div id="box-color">Измени мой цвет</div>
+    <select id="color-select">
+        <option value="red">Красный</option>
+        <option value="green">Зеленый</option>
+        <option value="blue">Синий</option>
+    </select>
+    <button id="apply-color-btn">Применить цвет</button>
+
+    <!-- Задача 5 
+    <button id="count-btn">Кликни меня</button>
+    <p id="click-counter">Кликов: 0</p> -->
+
+
+        <!-- Для задачи 1
+    <button id="click-btn">Нажми меня</button>
+    <div id="event-log"></div>
+
+    <!-- Для задачи 2 
+    <div id="color-box" style="width: 200px; height: 200px; background: lightblue; margin-top: 20px;">
+        Наведи на меня
+    </div>
+
+    <!-- Для задачи 3 
+    <input type="text" id="input-field" placeholder="Нажми любую клавишу">
+
+    <!-- Для задачи 4
+    <!-- (Кнопка создастся через JS, но если хочешь, добавь: <button id="click-btn">Клик</button>) -->
+    <!-- Лучше используй уже существующую #click-btn из Задачи 1 -->
+
+    <!-- Для задачи 5 
+    <form id="test-form">
+        <input type="text" id="username" placeholder="Имя">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="city" placeholder="Город">
+        <label><input type="checkbox" id="agree"> Согласен</label>
+        <button type="submit">Отправить</button>
+    </form>
+    <div id="form-data"></div> -->
+
+
+
+
+    <!-- Для задачи 1 и 2
+    <input type="text" id="live-input" placeholder="Печатай сюда">
+    <input type="text" id="change-input" placeholder="Измени и кликни в сторону">
+    <p id="status-text">Статус: пусто</p>
+
+    <!-- Для задачи 3
+    <a href="https://google.com" id="my-link">Перейти в гугл (но мы отменим)</a>
+    <button id="super-btn"><span id="inner-text">Кнопка с иконкой</span></button>
+
+    <!-- Для задачи
+    <button id="btn-one">Кнопка 1</button>
+    <button id="btn-two">Выключить обработчик у Кнопки 1</button>-->
+
+        <!-- Задача 1
+    <input type="text" id="text-input" placeholder="Печатай сюда">
+    <p id="text-mirror"></p>
+
+    <!-- Задача 2
+    <div id="hover-zone" style="width: 150px; height: 150px; background: lightgray; margin-top: 20px;">
+        Наведи на меня
+    </div>
+    <p id="hover-info"></p>
+
+    <!-- Задача 3 
+    <form id="login-form">
+        <input type="text" id="login-name" placeholder="Логин">
+        <button type="submit">Войти</button>
+    </form>
+    <p id="login-result"></p>
+
+    <!-- Задача 4 
+    <div id="parent-box" style="padding: 20px; border: 2px solid black; width: 200px;">
+        Родитель
+        <button id="child-btn">Дочерняя кнопка</button>
+    </div>
+    <p id="target-info"></p>
+
+    <!-- Задача 5 
+    <button id="start-btn">Включить кнопку</button>
+    <button id="danger-btn">Опасная кнопка</button>-->
+
+        <!-- Для задач 1, 2 и 5 
+    <div id="crud-section" style="padding: 20px; border: 1px solid gray; margin-bottom: 20px;">
+        <div class="flex-row">
+            <input type="text" id="new-item-text" placeholder="Новый пункт">
+            <button id="add-item-btn">Добавить</button>
+        </div>
+        <ul id="dynamic-list">
+            <!-- Сюда добавляются пункты 
+        </ul>
+    </div>
+
+    <!-- Для задачи 3 
+    <!-- (Карточка создастся через JS и добавится в #crud-section) -->
+
+    <!-- Для задачи 4 
+    <div class="gallery" style="display: flex; gap: 10px; margin-bottom: 20px;">
+        <img src="https://via.placeholder.com/100" alt="img1" style="cursor: pointer;">
+        <img src="https://via.placeholder.com/100" alt="img2" style="cursor: pointer;">
+        <img src="https://via.placeholder .com/100" alt="img3" style="cursor: pointer;">
+    </div> -->
+
+
+
+
+        <!-- Для задач 1 и 2 
+    <div id="playground" style="padding: 10px; border: 1px solid black;">
+        <button id="make-box">Создать коробку</button>
+    </div>
+
+    <!-- Для задачи 3
+    <ul id="my-list">
+        <li>Старый пункт 1</li>
+        <li>Старый пункт 2</li>
+    </ul>
+    <button id="clear-list">Очистить список</button>
+
+    <!-- Для задачи 4
+    <div id="clone-zone">
+        <p id="original-text">Оригинальный <b>текст</b></p>
+    </div>
+    <button id="clone-btn">Клонировать текст</button>
+
+    <!-- Для задачи 5 
+    <div id="fragment-target"></div>
+    <button id="add-50-btn">Добавить 50 абзацев</button>-->
+    
+
+
+
+
+        <!-- Для задач 1, 2, 3 и 5
+    <div id="styles-section" style="padding: 20px; border: 1px solid gray; margin-bottom: 20px;">
+        <div class="flex-row" style="display: flex; gap: 10px; margin-bottom: 15px;">
+            <button id="hide-btn">Скрыть</button>
+            <button id="show-btn">Показать</button>
+            <button id="toggle-highlight-btn">Переключить подсветку</button>
+        </div>
+        
+        <div id="color-box" style="width: 150px; height: 150px; background-color: lightblue; border: 2px solid black; transition: background-color 0.3s;">
+            Я коробка
+        </div>
+    </div> -->
+
+
+
+
+
+
+<!-- Для задач 1, 2 и 3
+<div id="test-box" style="width: 100px; height: 100px; border: 1px solid black;">
+    Тестовая коробка
+</div>
+<button id="add-class-btn">Добавить класс</button>
+<button id="remove-class-btn">Удалить класс</button>
+<button id="toggle-class-btn">Переключить класс</button>
+
+<!-- Для задачи 4 
+<div id="style-box" style="width: 150px; height: 150px; border: 2px solid blue;">
+    Стили
+</div>
+<button id="check-style-btn">Проверить стиль</button>
+
+<!-- Для задачи 5 
+<input type="text" id="color-input" placeholder="Введите цвет (red, blue...)">
+<button id="apply-color-btn">Применить цвет</button> -->
+
+
+
+
+
+    <!-- Задача 1 
+<div id="target-box" style="width: 100px; height: 100px; border: 2px solid black;">
+    Я коробка
+</div>
+<button id="btn-1">Сделать синим</button>
+
+<!-- Задача 2 
+<input type="text" id="name-input" placeholder="Твоё имя">
+<button id="btn-2">Поздороваться</button>
+<p id="greeting"></p>
+
+<!-- Задача 3 
+<ul id="my-list"></ul>
+<button id="btn-3">Добавить 3 пункта</button>
+
+<!-- Задача 4 
+<button id="btn-4">Удалить последний пункт</button>
+<p id="counter-text">Пунктов: 0</p>
+
+<!-- Задача 5 
+<div id="style-box" style="width: 100px; height: 100px; background: lightcoral;"></div>
+<button id="btn-5">Переключить стиль</button>-->
+
+
+    <!-- БЛОК 8 Для задач 1 и 3 
+    <div id="ancestor-1">
+        <div id="ancestor-2">
+            <p id="target-child">Я целевой элемент</p>
+            <span id="sibling-1">Сосед 1</span>
+            <span id="sibling-2">Сосед 2</span>
+        </div>
+    </div>
+
+    <!-- Для задачи 2 
+    <ul id="nav-parent">
+        <li>Пункт 1</li>
+        <li>Пункт 2</li>
+        <li>Пункт 3</li>
+    </ul>
+
+    <!-- Для задачи 4 и 5 
+    <!-- (Используем те же элементы, что выше, для проверки) -->
+
+
+
+        <!-- <div id="container">
+        <p id="first-child">Я первый</p>
+        <p id="second-child">Я второй</p>
+        <p id="third-child">Я третий</p>
+    </div>
+    <button id="btn-next">Следующий элемент</button>
+    <button id="btn-parent">Родитель</button>
+    <p id="result"></p> -->
+
+
+
+
+
+
+<!-- Для задач 1–5
+<div id="app">
+    <header id="app-header">
+        <h1 id="app-title">Заголовок</h1>
+        <nav id="app-nav">
+            <a href="#" class="nav-item">Ссылка 1</a>
+            <a href="#" class="nav-item">Ссылка 2</a>
+        </nav>
+    </header>
+    <main id="app-main">
+        <p id="app-text">Основной текст</p>
+    </main>
+    <footer id="app-footer">
+        <span id="app-copy">© 2026</span>
+    </footer>
+</div>
+<button id="btn-1">Первый и последний</button>
+<button id="btn-2">Соседи</button>
+<button id="btn-3">Все дети</button>
+<button id="btn-4">Родитель</button>
+<button id="btn-5">Следующий</button>
+<p id="result"></p> -->
+
+
+
+<!-- Для всех задач БЛОК 9
+<form id="test-form" style="padding: 20px; border: 1px solid black; max-width: 300px;">
+    <label for="username">Имя:</label>
+    <input type="text" id="username" placeholder="Введите имя">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Введите email">
+
+    <label for="city">Город:</label>
+    <select id="city">
+        <option value="">-- Выберите --</option>
+        <option value="msk">Москва</option>
+        <option value="spb">Санкт-Петербург</option>
+        <option value="kazan">Казань</option>
+    </select>
+
+    <label for="agree">Согласен:</label>
+    <input type="checkbox" id="agree">
+
+    <button type="submit">Отправить</button>
+    <button type="button" id="reset-form">Очистить форму</button>
+</form>
+
+<div id="form-data" style="margin-top: 20px;"></div> -->
+
+
+
+
+<!-- Для всех задач
+<form id="profile-form" style="padding: 20px; border: 1px solid black; max-width: 300px;">
+    <label for="nickname">Никнейм:</label>
+    <input type="text" id="nickname" placeholder="Введите ник">
+
+    <label for="subscribe">Подписаться на рассылку:</label>
+    <input type="checkbox" id="subscribe">
+
+    <label for="country">Страна:</label>
+    <select id="country">
+        <option value="">-- Выберите --</option>
+        <option value="ru">Россия</option>
+        <option value="by">Беларусь</option>
+        <option value="kz">Казахстан</option>
+    </select>
+
+    <button type="submit">Сохранить</button>
+    <button type="reset" id="reset-btn">Сбросить</button>
+</form>
+<p id="profile-result"></p> -->
+
+
+
+<!-- <form id="feedback-form" style="padding: 20px; border: 1px solid black; max-width: 300px;">
+    <label for="message">Сообщение:</label>
+    <textarea id="message" placeholder="Введите текст"></textarea>
+
+    <label for="rating">Оценка:</label>
+    <select id="rating">
+        <option value="">-- Оцените --</option>
+        <option value="5">Отлично (5)</option>
+        <option value="4">Хорошо (4)</option>
+        <option value="3">Средне (3)</option>
+    </select>
+
+    <label for="agree">Согласен с правилами:</label>
+    <input type="checkbox" id="agree">
+
+    <button type="submit">Отправить</button>
+</form>
+<p id="feedback-result"></p> -->
+
+
+
+<!-- Для задач 1, 4 БЛОК 10
+<ul id="dynamic-list">
+    <li>Задача 1 <button class="remove-btn">Удалить</button></li>
+    <li>Задача 2 <button class="remove-btn">Удалить</button></li>
+    <li>Задача 3 <button class="remove-btn">Удалить</button></li>
+</ul>
+
+<!-- Для задач 2, 3 
+<div id="delegation-container" style="padding: 10px; border: 1px solid black; margin-top: 20px;">
+    <button data-action="save">Сохранить</button>
+    <button data-action="delete">Удалить</button>
+    <button data-action="edit">Редактировать</button>
+</div>
+<p id="delegation-log"></p>
+<button id="add-action-btn">Добавить кнопку</button>
+
+<!-- Для задачи 5 -->
+<!-- (Используем всё, что есть на странице) -->
+
+
+
+
+<!-- Для задач 1–5
+<ul id="todo-list">
+    <li>Купить хлеб <button class="delete-btn">Удалить</button></li>
+    <li>Помыть посуду <button class="delete-btn">Удалить</button></li>
+</ul>
+<button id="add-task">Добавить задачу</button>
+<p id="status"></p>
+
+<div id="buttons-container" style="margin-top: 20px; padding: 10px; border: 1px solid black;">
+    <button data-action="save">Сохранить</button>
+    <button data-action="cancel">Отмена</button>
+</div>
+<button id="add-button">Добавить кнопку</button>
+<p id="action-log"></p> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+-повторение  -->
+<header class = 'main-header'>
+    <img id ='logo' src="https://cdn-icons-png.flaticon.com/512/2196/2196526.png" alt="">
+    <h1>ПОВТОРЕНИЕ</h1>
+    <nav class = 'nav-menu'>
+        <a class="nav-a" href="#img-picture">Картинки</a>
+        <a class="nav-a">Текст</a>
+        <a class="nav-a">Инпуты</a>
+    </nav>
+    <button id="btn-change-fone">Фокус</button>
+</header>
+
+<main>
+    <div class = 'picture-big'>
+        <img id="img-picture" src="https://images.pexels.com/photos/4826377/pexels-photo-4826377.jpeg?cs=srgb&dl=pexels-kienvirak-4826377.jpg&fm=jpg" alt="">
+        <div class="picture-text-flex">
+            <p id ='text-picture'>Красивый вид, правда?</p>
+            <button id ='btn-p-hidden'>Скрыть</button>
+        </div>
+    </div>
+
+    <div class="div-form">
+        <form class="form">
+            <div class='div-form-name'><label><input type ="text" name = 'form-name' id ='form-name' placeholder="Введите имя"></label></div>
+            <div class='div-form-email'><label><input type="email" name = 'form-email' id = 'form-email' placeholder="Введите почту"></label></div>
+            <div class='div-form-text'><textarea name = 'form-textarea' id="form-textarea" placeholder="Введите сообщение"></textarea></div>
+            <div class='div-form-button'><button type="submit" id = 'form-btn'>Отправить</button></div>
+        </form>
+    </div>
+    
+
+    <section class= 'card-grid'>
+        <h2>Наши товары</h2>
+        <div class = 'products-card-grid'>
+            <div class = 'card' id="card-1"> 
+                <img src ="https://via.placeholder.com/150" id ='img-card'>
+                <p>Цена: 100BYN</p>
+                <button class = 'delete-card-1'>Удалить</button>
+            </div>
+            <div class = 'card' id="card-2">
+                <img src ="https://via.placeholder.com/150" id ='img-card'>
+                <p>Цена: 100BYN</p>
+                <button class = 'delete-card-1'>Удалить</button>
+            </div>
+            <div class = 'card' id="card-3">
+                <img src ="https://via.placeholder.com/150" id ='img-card'>
+                <p>Цена: 100BYN</p>
+                <button class = 'delete-card-1'>Удалить</button>
+            </div>
+            <div class = 'card' id="card-4">
+                <img src ="https://via.placeholder.com/150" id ='img-card'>
+                <p>Цена: 100BYN</p>
+                <button class = 'delete-card-1'>Удалить</button>
+            </div>
+            <div class = 'card' id="card-5">
+                <img src ="https://via.placeholder.com/150" id ='img-card'>
+                <p>Цена: 100BYN</p>
+                <button class = 'delete-card-1'>Удалить</button>
+            </div>
+            <div class = 'card' id="card-6">
+                <img src ="https://via.placeholder.com/150" id ='img-card'>
+                <p>Цена: 100BYN</p>
+                <button class = 'delete-card-1'>Удалить</button>
+            </div>
+            <div class = 'card' id="card-7">
+                <img src ="https://via.placeholder.com/150" id ='img-card'>
+                <p>Цена: 100BYN</p>
+                <button class = 'delete-card-1'>Удалить</button>
+            </div>
+            <div class = 'card' id="card-8">
+                <img src ="https://via.placeholder.com/150" id ='img-card'>
+                <p>Цена: 100BYN</p>
+                <button class = 'delete-card-1'>Удалить</button>
+            </div>
+        </div>
+        <button class="add-card">Добавить карточку</button>
+    </section>
+
+
+    <section class="modal-window">
+        <button class = 'btn-modal'>Открыть</button>
+        <div class="modal">
+            <div class="modal-div">
+                <p>Сюда что угодно вставь для работы</p>
+                <button class = 'btn-modal-exit'>Закрыть</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="faq">
+        <h2>Частыe вопросы</h2>
+        <div class ='faq-container'>
+            <div class="faq-1">
+                <button class="faq-question-1">Как оформить заказ?</button>
+                <div class="faq-answer-1">Нажмите на кнопку «Купить» и заполните форму.</div>
+            </div>
+            <div class="faq-2">
+                <button class="faq-question-2">Как оформить заказ?</button>
+                <div class="faq-answer-2">Нажмите на кнопку «Купить» и заполните форму.</div>
+            </div>
+            <div class="faq-3">
+                <button class="faq-question-3">Как оформить заказ?</button>
+                <div class="faq-answer-3">Нажмите на кнопку «Купить» и заполните форму.</div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+        <!-- Подключение основного скрипта -->
+    <script src="app.js"></script>
+</body>
+</html>

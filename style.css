@@ -1,0 +1,924 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body:has(.modal.active) {
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#logo {
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    padding-left: 150px;
+     font-size: 2.5rem;
+     font-family: Arial, Helvetica, sans-serif;
+     letter-spacing: 2px;
+     text-align: center;
+}
+
+.nav-menu {
+    display: flex;
+    gap:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-align: center;    
+}
+
+a {
+    color: rgb(50, 50, 50)
+    
+}
+a:hover {
+    color:red;
+    font-size: 1.6rem;
+}
+
+
+#btn-change-fone {
+    background-color: black;
+    color:white;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+#btn-change-fone:hover {
+    background-color: rgb(247, 247, 247);
+    color:black;
+    width: 130px;
+    height: 50px;
+    font-size: 1.7rem;
+}
+
+
+main {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.picture-big {
+   text-align: center;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   
+}
+
+#img-picture {
+    width: 100%;
+    border-radius: 100px;
+}
+
+
+
+#text-picture {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+#btn-p-hidden {
+    border: 1px solid pink;
+    border-radius: 10px;
+    background-color: rgb(244, 93, 156);
+    font-size: 1.2rem;
+    padding: 2px;
+    width: 100px;
+}
+
+
+#btn-p-hidden:hover{
+    border: 1px solid black;
+    padding: 3px;
+    background-color: rgb(250, 58, 138);
+}
+
+.picture-text-flex {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+    
+}
+
+
+
+.div-form {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgb(255, 149, 193);
+    padding: 100px;
+    margin-bottom: 200px;
+    border-radius: 50px;
+   transition: box-shadow 0.3s ease;
+     box-shadow: 0px 0px 60px rgba(255, 116, 192, 0.8);
+    border: 1.5px solid rgb(255, 97, 163);
+}
+
+.div-form:hover {
+    
+    box-shadow: 0px 0px 120px rgba(255, 63, 169, 0.8);
+}
+
+
+.form {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    gap:17px;
+}
+
+
+.div-form-name {
+    margin: 0 auto;
+    min-width: 65%;
+}
+
+.div-form-email {
+    margin: 0 auto;
+    width: 65%;
+}
+
+.div-form-text{
+   margin: 0 auto;
+   width: 70%;
+}
+
+.div-form-button {
+    margin: 0 auto;
+    width: 30%;
+}
+
+input {
+    width: 100%;
+    height: 35px;
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border-radius: 30px;
+    border:1px solid rgb(113, 113, 113);
+    color: black;
+    letter-spacing: 2px;
+}
+
+input::placeholder{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    color:black;
+    letter-spacing: 1px;
+    opacity: 1;
+}
+
+
+input:hover{
+    background-color: rgb(253, 252, 251);
+    border: none;
+    border: 3px solid white;
+}
+
+textarea {
+    width: 100%;
+    height: 75px;
+    font-size: 1rem;
+    border: 1px solid rgb(113, 113, 113);
+    color:black;
+    border-radius: 15px;
+
+}
+
+textarea::placeholder {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+    color:black;
+    opacity: 1;
+}
+
+textarea:hover {
+    background-color: rgb(253, 252, 251);
+    border: none;
+    border: 3px solid white;
+    
+}
+
+#form-btn {
+    width: 100%;
+    height: 45px;
+    font-size: 0.9rem;
+    border: 2px solid pink;
+    border-radius: 30px;
+    background-color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:0.9rem;
+}
+
+#form-btn:hover {
+    background-color: rgb(255, 230, 183);
+    border: 3px solid white ;
+    height: 47px;
+}
+
+
+
+.card-grid {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+
+.card-grid h2 {
+    padding-bottom: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.7rem;
+    letter-spacing: 5px;
+}
+
+
+
+.card {
+    border-radius: 12px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 100px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.products-card-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+    gap:100px;
+    padding-bottom: 100px;
+}
+
+.products-card-grid p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-decoration: underline rgb(254, 192, 217);
+}
+
+.products-card-grid img {
+    border-radius: 30px;
+    border: 1.2px solid rgb(254, 209, 227);
+}
+
+.products-card-grid button {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    color:rgb(252, 250, 239);
+    background-color: rgb(255, 113, 172);
+    border: 1px dashed white;
+    border-radius: 10px;
+    padding: 7px;
+
+}
+
+.products-card-grid button:hover {
+    background-color: rgb(255, 75, 75);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 1);
+}
+
+
+.add-card {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.0rem;
+    padding: 15px;
+    background-color: rgb(255, 113, 172);
+    border-radius: 20px;
+    border: 1px dashed white;
+    color: white;
+}
+
+.add-card:hover {
+    background-color: rgb(0, 110, 0);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 1);
+}
+
+
+
+
+.modal-window {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000; 
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 50vh;
+    background-color: rgb(224, 224, 224);
+    border-radius: 20px;
+
+    transform: scale(0.9);
+    transition: transform 1s ease;
+}
+
+.modal.active .modal-div {
+    transform: scale(1);
+}
+
+.modal.active p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-decoration: underline rgb(254, 192, 217);
+}
+
+.btn-modal {
+    width: 15%;
+    height: 10vh;
+    border-radius: 20px;
+    background-color: rgb(255, 113, 172);
+    border: 2px dashed white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    color:rgb(252, 250, 239);
+}
+
+.btn-modal:hover {
+    box-shadow: 0px 0px 100px rgba(0,0,0,0.5);
+    background-color: rgb(255, 73, 149);
+}
+
+
+.btn-modal-exit {
+    width: 10vw;
+    height: 10vh;
+    border-radius: 20px;
+    background-color: rgb(255, 113, 172);
+    border: 2px dashed white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    color:rgb(252, 250, 239);
+
+}
+
+
+.btn-modal-exit:hover {
+    
+    box-shadow: 0px 0px 100px rgba(0,0,0,0.5);
+    background-color: rgb(255, 73, 149);
+}
+
+
+
+
+.faq {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px dashed ;
+    margin-bottom: 200px;
+}
+
+
+h2 {
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+
+.faq-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap:20px
+}
+
+.faq-1 {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.faq-question-1 {
+    position: relative; /* Обязательно! Чтобы стрелка позиционировалась внутри кнопки */
+    margin: 0 auto;
+    width: 70%;
+    border: 2px dashed white;
+    background-color: rgb(255, 113, 172);
+    min-height: 7vh; /* Лучше min-height, чтобы длинный текст не вылезал за края */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    color: rgb(252, 250, 239);
+    cursor: pointer;
+
+    /* Отступ справа с запасом, чтобы текст никогда не наезжал на стрелку */
+    padding: 10px 50px 10px 25px; 
+    text-align: left; /* Выравнивание текста по левому краю (можно поставить center) */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-question-1:hover {
+   box-shadow: 0px 0px 60px rgba(0,0,0,0.5);
+    background-color: rgb(255, 73, 149);
+}
+
+
+
+.faq-answer-1 {
+    
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(254, 249, 249);
+    border-radius: 40px;
+    text-decoration: underline;
+
+    
+    max-height: 0;
+    opacity: 0;
+    padding: 0 20px; 
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden; 
+
+    
+    transition: max-height 0.6s ease, opacity 0.6s ease, padding 1s ease, margin 0.4s ease;
+}
+
+
+.faq-answer-1.open{
+    max-height: 500px; 
+    opacity: 1;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* ии попросил сделать стрелку*/
+.faq-question-1::after {
+    content: "";
+    position: absolute; /* Жестко фиксируем стрелку */
+    right: 25px;        /* Отступ строго от правого края кнопки */
+    top: 50%;           /* Ставим ровно по центру по вертикали */
+    
+    width: 10px;
+    height: 10px;
+    border-right: 3px solid rgb(252, 250, 239);
+    border-bottom: 3px solid rgb(252, 250, 239);
+    
+    /* Центрируем и поворачиваем в стрелку вниз */
+    transform: translateY(-70%) rotate(45deg); 
+    transition: transform 0.4s ease;
+}
+
+.faq-question-1.active::after {
+    /* При открытии переворачиваем вверх и чуть корректируем центр */
+    transform: translateY(-30%) rotate(-135deg);
+}
+
+
+
+.faq-2 {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.faq-question-2 {
+    position: relative; /* Обязательно! Чтобы стрелка позиционировалась внутри кнопки */
+    margin: 0 auto;
+    width: 70%;
+    border: 2px dashed white;
+    background-color: rgb(255, 113, 172);
+    min-height: 7vh; /* Лучше min-height, чтобы длинный текст не вылезал за края */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    color: rgb(252, 250, 239);
+    cursor: pointer;
+
+    /* Отступ справа с запасом, чтобы текст никогда не наезжал на стрелку */
+    padding: 10px 50px 10px 25px; 
+    text-align: left; /* Выравнивание текста по левому краю (можно поставить center) */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-question-2:hover {
+   box-shadow: 0px 0px 60px rgba(0,0,0,0.5);
+    background-color: rgb(255, 73, 149);
+}
+
+
+
+.faq-answer-2 {
+    
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(254, 249, 249);
+    border-radius: 40px;
+    text-decoration: underline;
+
+    
+    max-height: 0;
+    opacity: 0;
+    padding: 0 20px; 
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden; 
+
+    
+    transition: max-height 0.6s ease, opacity 0.6s ease, padding 1s ease, margin 0.4s ease;
+}
+
+
+.faq-answer-2.open{
+    max-height: 500px; 
+    opacity: 1;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* ии попросил сделать стрелку*/
+.faq-question-2::after {
+    content: "";
+    position: absolute; /* Жестко фиксируем стрелку */
+    right: 25px;        /* Отступ строго от правого края кнопки */
+    top: 50%;           /* Ставим ровно по центру по вертикали */
+    
+    width: 10px;
+    height: 10px;
+    border-right: 3px solid rgb(252, 250, 239);
+    border-bottom: 3px solid rgb(252, 250, 239);
+    
+    /* Центрируем и поворачиваем в стрелку вниз */
+    transform: translateY(-70%) rotate(45deg); 
+    transition: transform 0.4s ease;
+}
+
+.faq-question-2.active::after {
+    /* При открытии переворачиваем вверх и чуть корректируем центр */
+    transform: translateY(-30%) rotate(-135deg);
+}
+
+
+
+.faq-3 {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.faq-question-3 {
+    position: relative; /* Обязательно! Чтобы стрелка позиционировалась внутри кнопки */
+    margin: 0 auto;
+    width: 70%;
+    border: 2px dashed white;
+    background-color: rgb(255, 113, 172);
+    min-height: 7vh; /* Лучше min-height, чтобы длинный текст не вылезал за края */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    color: rgb(252, 250, 239);
+    cursor: pointer;
+
+    /* Отступ справа с запасом, чтобы текст никогда не наезжал на стрелку */
+    padding: 10px 50px 10px 25px; 
+    text-align: left; /* Выравнивание текста по левому краю (можно поставить center) */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-question-3:hover {
+   box-shadow: 0px 0px 60px rgba(0,0,0,0.5);
+    background-color: rgb(255, 73, 149);
+}
+
+
+
+.faq-answer-3 {
+    
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(254, 249, 249);
+    border-radius: 40px;
+    text-decoration: underline;
+
+    
+    max-height: 0;
+    opacity: 0;
+    padding: 0 20px; 
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden; 
+
+    
+    transition: max-height 0.6s ease, opacity 0.6s ease, padding 1s ease, margin 0.4s ease;
+}
+
+
+.faq-answer-3.open{
+    max-height: 500px; 
+    opacity: 1;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* ии попросил сделать стрелку*/
+.faq-question-3::after {
+    content: "";
+    position: absolute; /* Жестко фиксируем стрелку */
+    right: 25px;        /* Отступ строго от правого края кнопки */
+    top: 50%;           /* Ставим ровно по центру по вертикали */
+    
+    width: 10px;
+    height: 10px;
+    border-right: 3px solid rgb(252, 250, 239);
+    border-bottom: 3px solid rgb(252, 250, 239);
+    
+    /* Центрируем и поворачиваем в стрелку вниз */
+    transform: translateY(-70%) rotate(45deg); 
+    transition: transform 0.4s ease;
+}
+
+.faq-question-3.active::after {
+    /* При открытии переворачиваем вверх и чуть корректируем центр */
+    transform: translateY(-30%) rotate(-135deg);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    /* Жёстко центрируем всё */
+    header {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        padding: 20px 0 !important;
+    }
+
+    #logo {
+        margin: 0 auto 20px !important;
+
+    }
+
+    h1 {
+        margin: 0 auto 20px !important;
+        padding: 0 !important;
+        text-align: center !important;
+        font-size: 2rem;
+    }
+
+    .nav-menu {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        justify-content: center !important;
+        
+    }
+
+    .nav-menu a {
+        font-size: 1.4rem;
+        text-decoration: none;
+        padding-bottom: 15px;
+    }
+
+    #btn-change-fone {
+        margin: 0 auto !important;
+        width: 100px;
+        font-size: 1.5rem;
+    }
+
+    main {
+        width: 90%;
+    }
+    
+    #img-picture {
+        border-radius: 30px;
+        height: 35vh;
+    }
+    
+
+    .picture-text-flex {
+        margin: 0 auto;
+        width: 80%;
+        padding-top: 10px;
+    }
+
+
+
+
+    .div-form {
+        width: 90% !important;
+        padding: 60px !important; /* ← добавь отступы внутри формы */
+    }
+
+    /* Поля на всю ширину */
+    .div-form-name,
+    .div-form-email {
+        width: 90% !important; /* ← было 65-70%, теперь 100% */
+        margin: 0 auto;
+    }
+
+    .div-form-text {
+        width: 100% !important; /* ← было 65-70%, теперь 100% */
+        margin: 0 auto;
+    }
+
+
+    /* Кнопка на всю ширину */
+    .div-form-button {
+        width: 80% !important; /* ← было 30%, теперь 100% */
+        margin: 0 auto;
+    }
+
+    /* Убедимся, что input/textarea растягиваются */
+    input, textarea {
+        width: 100% !important;
+        box-sizing: border-box; /* ← чтобы padding не увеличивал ширину */
+
+        font-size: 1rem;
+    }
+
+
+    input::placeholder {
+        font-size: 0.9rem;
+    }
+
+    textarea::placeholder {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    .card-grid {
+        width: 100%;
+    }
+    .card {
+        width: 90%;
+    }
+
+    .products-card-grid {
+        margin: 0 auto;
+        width: 90%;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap:60px;
+    }
+
+        .products-card-grid p {
+            font-size: 1.4rem;
+        }
+
+        .products-card-grid img {
+            width: 100%;
+        }
+
+        .products-card-grid button {
+            font-size: 1.05rem;
+        }
+
+
+
+
+    .modal {
+        width: 100%;
+    }
+
+    .modal.active {
+        width: 100%;
+    }
+
+    .modal-div {
+        width: 80%;
+        border-radius: 50px;
+        height: 40vh;
+    }
+
+    .btn-modal {
+        width: 60% !important;
+        height: 80px;
+        font-size: 1.1rem;
+    }
+
+    .btn-modal-exit {
+        width: 50% !important;
+        height: 50px;
+        font-size: 0.9rem;
+    }
+
+
+    .faq {
+        width: 90%;
+        padding: 50px 0px 50px 0px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 100px;
+       
+    }
+    .faq-container {
+        width: 100% !important;
+    }
+    .faq-1,.faq-2,.faq-3 {
+        width: 100%;
+    }
+    
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    .faq-question-1, .faq-question-2, .faq-question-3 {
+        font-size: 1.1rem;
+    }
+}
